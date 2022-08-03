@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # mall整合SpringSecurity和JWT实现认证和授权（一）
 
@@ -36,7 +36,7 @@ String signature = HMACSHA512(base64UrlEncode(header) + "." +base64UrlEncode(pay
 eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZWQiOjE1NTY3NzkxMjUzMDksImV4cCI6MTU1NzM4MzkyNX0.d-iki0193X0bBOETf2UN3r3PotNIEAV7mzIxxeI5IxFyzzkOZxS0PGfF_SK6wxCv2K8S0cZjMkv6b5bCqc0VBw
 ```
 可以在该网站上获得解析结果：https://jwt.io/
-![展示图片](../images/arch_screen_13.png)
+![](../images/arch_screen_13.png)
 
 #### JWT实现认证和授权的原理
 

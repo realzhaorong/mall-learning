@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # mall整合SpringBoot+MyBatis搭建基本骨架
 
@@ -41,7 +41,7 @@ PageInfo<PmsBrand> pageInfo = new PageInfo<PmsBrand>(list);
 
 ### 使用IDEA初始化一个SpringBoot项目
 
-![展示图片](../images/arch_screen_01.png)
+![](../images/arch_screen_01.png)
 
 ### 添加项目依赖
 > 在pom.xml中添加相关依赖。
@@ -119,7 +119,7 @@ mybatis:
 
 ### 项目结构说明
 
-![展示图片](../images/arch_screen_02.png)
+![](../images/arch_screen_02.png)
 
 ### Mybatis generator 配置文件
 

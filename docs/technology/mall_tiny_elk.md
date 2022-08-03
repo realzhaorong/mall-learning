@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # SpringBoot应用整合ELK实现日志收集
 
@@ -76,6 +76,7 @@ services:
       - /mydata/elasticsearch/data:/usr/share/elasticsearch/data #数据文件挂载
     ports:
       - 9200:9200
+      - 9300:9300
   kibana:
     image: kibana:6.4.0
     container_name: kibana
@@ -105,7 +106,7 @@ services:
 docker-compose up -d
 ```
 注意：Elasticsearch启动可能需要好几分钟，要耐心等待。
-![展示图片](../images/tech_screen_01.png)
+![](../images/tech_screen_01.png)
 
 #### 在logstash中安装json_lines插件
 ```shell
@@ -126,7 +127,7 @@ systemctl stop firewalld
 ```
 访问地址：http://192.168.3.101:5601
 
-![展示图片](../images/tech_screen_02.png)
+![](../images/tech_screen_02.png)
 
 ## SpringBoot应用集成Logstash
 
@@ -180,37 +181,37 @@ systemctl stop firewalld
 ```
 
 ### 运行Springboot应用
-![展示图片](../images/tech_screen_03.png)
+![](../images/tech_screen_03.png)
 
 ## 在kibana中查看日志信息
 
 ### 创建index pattern
 
-![展示图片](../images/tech_screen_04.png)
+![](../images/tech_screen_04.png)
 
-![展示图片](../images/tech_screen_05.png)
+![](../images/tech_screen_05.png)
 
-![展示图片](../images/tech_screen_06.png)
+![](../images/tech_screen_06.png)
 
 ### 查看收集的日志
 
-![展示图片](../images/tech_screen_07.png)
+![](../images/tech_screen_07.png)
 
 ### 调用接口进行测试
 
-![展示图片](../images/tech_screen_08.png)
+![](../images/tech_screen_08.png)
 
-![展示图片](../images/tech_screen_09.png)
+![](../images/tech_screen_09.png)
 
 ### 制造一个异常并查看
 
 #### 修改获取所有品牌列表接口
 
-![展示图片](../images/tech_screen_10.png)
+![](../images/tech_screen_10.png)
 
 #### 调用该接口并查看日志
 
-![展示图片](../images/tech_screen_11.png)
+![](../images/tech_screen_11.png)
 
 ### 总结
 搭建了ELK日志收集系统之后，我们如果要查看SpringBoot应用的日志信息，就不需要查看日志文件了，直接在Kibana中查看即可。

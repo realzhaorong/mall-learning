@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # SpringBoot应用中使用AOP记录接口访问日志
 
@@ -262,7 +262,7 @@ public class WebLogAspect {
 ## 进行接口测试
 运行项目并访问：http://localhost:8080/swagger-ui.html
 
-![展示图片](../images/refer_screen_107.png)
+![](../images/refer_screen_107.png)
 
 可以看到控制住台中会打印如下日志信息：
 ```json

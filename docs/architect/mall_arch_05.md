@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # mall整合SpringSecurity和JWT实现认证和授权（二）
 
@@ -316,10 +316,10 @@ public class Swagger2Config {
 ```
 
 ### 给PmsBrandController接口中的方法添加访问权限
-- 给查询接口添加pms:brand:read权限
-- 给修改接口添加pms:brand:update权限
-- 给删除接口添加pms:brand:delete权限
-- 给添加接口添加pms:brand:create权限
+- 给查询接口添加`pms:brand:read`权限
+- 给修改接口添加`pms:brand:update`权限
+- 给删除接口添加`pms:brand:delete`权限
+- 给添加接口添加`pms:brand:create`权限
 
 例子：
 ```java
@@ -334,49 +334,51 @@ public CommonResult<List<PmsBrand>> getBrandList() {
 ### 运行项目，访问API
 Swagger api地址：http://localhost:8080/swagger-ui.html
 
-![展示图片](../images/arch_screen_14.png)
+![](../images/arch_screen_14.png)
 
 ### 未登录前访问接口
 
-![展示图片](../images/arch_screen_15.png)
+![](../images/arch_screen_15.png)
 
-![展示图片](../images/arch_screen_16.png)
+![](../images/arch_screen_16.png)
 
 ### 登录后访问接口
 
 - 进行登录操作：登录帐号test 123456
 
-![展示图片](../images/arch_screen_17.png)
+![](../images/arch_screen_17.png)
 
-![展示图片](../images/arch_screen_18.png)
+![](../images/arch_screen_18.png)
 
 - 点击Authorize按钮，在弹框中输入登录接口中获取到的token信息
 
-![展示图片](../images/arch_screen_19.png)
+![](../images/arch_screen_19.png)
 
-![展示图片](../images/arch_screen_20.png)
+![](../images/arch_screen_20.png)
 
 - 登录后访问获取权限列表接口，发现已经可以正常访问
 
-![展示图片](../images/arch_screen_15.png)
+![](../images/arch_screen_15.png)
 
-![展示图片](../images/arch_screen_21.png)
+![](../images/arch_screen_21.png)
 
 ### 访问需要权限的接口
 
-> 由于test帐号并没有设置任何权限，所以他无法访问具有pms:brand:read权限的获取品牌列表接口。
+> 由于test帐号并没有设置任何权限，所以他无法访问具有`pms:brand:read`权限的获取品牌列表接口。
 
-![展示图片](../images/arch_screen_22.png)
+![](../images/arch_screen_22.png)
 
-![展示图片](../images/arch_screen_23.png)
+![](../images/arch_screen_23.png)
 
 ### 改用其他有权限的帐号登录
 
 > 改用admin 123456登录后访问，点击Authorize按钮打开弹框,点击logout登出后再重新输入新token。
 
-![展示图片](../images/arch_screen_22.png)
+`注意`：如果admin帐号密码不对的话，公众号后台回复`体验`来获取。
 
-![展示图片](../images/arch_screen_24.png)
+![](../images/arch_screen_22.png)
+
+![](../images/arch_screen_24.png)
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-04](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-04)

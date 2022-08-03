@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # mall整合Redis实现缓存功能
 
@@ -11,15 +11,15 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 - 下载Redis,下载地址：https://github.com/MicrosoftArchive/redis/releases
 
-![展示图片](../images/arch_screen_09.png)
+![](../images/arch_screen_09.png)
 
 - 下载完后解压到指定目录
 
-![展示图片](../images/arch_screen_10.png)
+![](../images/arch_screen_10.png)
 
 - 在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
 
-![展示图片](../images/arch_screen_11.png)
+![](../images/arch_screen_11.png)
 
 ## 整合Redis
 
@@ -293,7 +293,7 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 ### 运行项目
 > 访问Swagger的API文档地址http://localhost:8080/swagger-ui.html ,对接口进行测试。
 
-![展示图片](../images/arch_screen_12.png)
+![](../images/arch_screen_12.png)
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-03](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-03)
